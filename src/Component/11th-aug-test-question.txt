@@ -1,0 +1,156 @@
+1.What is react? 
+
+    Answer: The React.js framework is an open-source JavaScript framework
+            and library developed by Facebook. It’s used for building 
+            interactive user interfaces and web applications quickly
+            and efficiently with significantly less code than you would
+            with vanilla JavaScript.
+
+
+2.Write syntax of class component?
+
+    syntax:
+            import React from 'react'
+
+            export const class Comp extends React.component{
+                render(){
+                    return(<div>
+                                This is class component
+                            </div>
+                    )   
+                }
+            }
+
+
+3.What is props?
+
+    Answer: Props stand for "Properties." They are read-only components. 
+            It is an object which stores the value of attributes of a tag
+            and work similar to the HTML attributes. It gives a way to pass 
+            data from one component to other components. It is similar to 
+            function arguments.
+
+4.  var employee = {
+    name: "Christy",
+    position: "Trainer"}
+
+    employee.skill = "JS"
+    console.log(employee) 
+
+    Output:{name: 'Christy', position: 'Trainer', skill: 'JS'}
+
+5.  console.log(a);
+    var a=5;
+    What is the output? 
+        Output:undefined
+    which mechanism will apply?
+        Mechanism:Hoisting
+
+6.Which company introduce react?
+
+    Answer:Facebook
+
+7.Who invented react js? 
+
+    Answer:Jordan Walke
+
+8.Advantage of react.
+
+    -> Creating Dynamic Web Applications Becomes Easier.
+    -> Reusable Components.
+    -> Performance Enhancement.
+    -> The Support of Handy Tools.
+    -> Known to be SEO Friendly.
+    -> The Benefit of Having JavaScript Library.
+    -> Scope for Testing the Codes.
+
+
+9.What is component. 
+
+    Answer: Components are independent and reusable bits of code.
+            They serve the same purpose as JavaScript functions, 
+            but work in isolation and return HTML. Components come in 
+            two types, 
+                -> Class components
+                -> Function components
+
+10. Write a syntax of function component? 
+
+    syntax :
+
+            import React from 'react'
+
+            cons Fun=()=>{
+                return(<div>
+                        This is function component
+                    </div>
+                )   
+            }
+
+    
+11. Write any one example of named export.
+
+    Code:
+        import  React fromm 'react'
+
+        export const Named=() => {
+            return(<div>
+                    This is named export
+                </div>
+            )
+        }
+
+12.How many default export we use in a single file.    
+
+    Answer:only one default export
+
+
+13.How many types of imports are there?
+
+    Answer: two ways
+
+
+14.Solve palindrome of a string in async/await method.
+
+    Code:
+
+        let a="krishna"
+        let b=a
+
+        function start(){
+            var str=""
+            var i=a.length-1
+            
+            for(i;i>=0;i--){
+                str+=a[i]
+            }
+            return new Promise((re,rj) => {
+                re(str)
+            })
+        }
+
+        function check(value){
+            let c=value
+            return new Promise((re,rj) => {
+                if(c == b){
+                    re(console.log("palindrome"))
+                }
+                else{
+                    rj(console.log("Not a palindrome"))
+                }
+            })
+        }
+
+        async function access(){
+            try{
+                let x=await start()
+                let y=await check(x)
+
+                console.log(y)
+            }
+            catch(z){
+                console.log(z)
+            }
+        }
+
+        access()

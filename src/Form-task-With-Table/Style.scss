@@ -1,0 +1,179 @@
+.container{
+    width:90%;
+    margin: 0px auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align:center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+} 
+.vh-100{
+    height: 100vh;
+}
+.col-1{
+    width:8.33%;
+    padding:0 15px;
+}
+.col-2{
+    width:16.66%;
+    padding:0 15px;
+}
+.col-3{
+    width: 25%;
+    padding:0 15px;
+}
+.col-4{
+    width:33.33%;
+    padding:0 15px;
+}
+.col-5{
+    width:41.66%;
+    padding:0 15px;
+}
+.col-6{
+    width:50%;
+    padding:0 15px;
+}
+.col-7{
+    width: 58.33%;
+    padding:0 15px;
+}
+.col-8{
+    width:66.66%;
+    padding:0 15px;
+}
+.col-9{
+    width:75%;
+    padding:0 15px;
+}
+.col-10{
+    width:83.33%;
+    padding:0 15px;
+}
+.col-11{
+    width:91.66%;
+    padding:0 15px;
+}
+.col-12{
+    width:100%;
+    padding:0 15px;
+}
+input[type=text],textarea[type=text]{
+    width: 95%;
+    border-radius: 6px;
+    margin: 15px 0px;
+    padding: 10px 10px;
+    border: 1px solid whitesmoke;
+}
+input[type=text]:focus,textarea[type=text]:focus{
+    outline: none;
+}
+.label,.submit-btn{
+    margin: 15px 0px;
+}
+table,th,td{
+    border: 1px solid whitesmoke;
+    border-collapse: collapse;
+    color: whitesmoke;
+}
+td{
+    height: 40px;
+}
+.pos{
+    position: relative;
+}
+.pos span{
+    position: absolute;
+	left: 20px;
+    top:22px;
+    pointer-events:none;
+    transition: .5s;
+}
+.pos input[type=text]:focus~span,.pos input[type=text]:valid~span,.pos textarea[type=text]:focus~span,.pos textarea[type=text]:valid~span{
+    transform: translateY(-15px) translateX(10px);
+    font-size: 14px;
+	padding: 0 10px;
+	background-color: pink;
+	border-radius: 5px;
+    color: white;
+}
+.pos input:valid,.pos input:focus,.pos textarea:valid,.pos textarea:focus{
+    border: 3px solid pink;
+}
+.bg{
+    align-items: center;
+	height:100vh;
+	justify-content: center;
+	background-image: url('../Component/Image/bg.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.bgblur{
+    border: 1px solid rgba(255, 255, 255, 0.722);
+	border-radius: 12px;
+	backdrop-filter: blur(10px);
+    padding: 30px 10px;
+}
+p{
+    color:pink;
+    font-weight: 700;
+    margin: 0px;
+}
+button{
+    width:40%;
+    padding: 10px;
+    border-radius: 12px;
+    border-width: 0px;
+    background-color: whitesmoke;
+    transition: .3s ease;
+}
+button:hover{
+    background: linear-gradient(to bottom,pink,rgb(226, 151, 164));
+    color: white;
+}
+label{
+    color:whitesmoke;
+}
+input[type=radio]{
+    accent-color: pink;
+}
+.hvr:hover{
+    color: pink;
+    transition: .3s ease;
+    font-size: 20px;
+}
+
+@media (max-width:568px) {
+    .res{
+        width:100%;
+    }
+    .col-12{
+        padding: 0px;
+    }
+}
+@media (min-width:568px) {
+    .res{
+        width:100%;
+    }
+    .col-12{
+        padding: 0px;
+    }
+}
+@media (min-width:768px) {
+    .res{
+        width:60%;
+    }
+}
+@media (min-width:992px) {
+    .res{
+        width:33.33%;
+    }
+}

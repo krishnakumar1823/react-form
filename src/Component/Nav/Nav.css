@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bg-clr{
+    background-color: gainsboro;
+}
+.container{
+    width:90%;
+    margin:0px auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.talign{
+    text-align: center;
+}
+.col-1{
+    width:8.33%
+}
+.col-2{
+    width:16.66%
+}
+.col-3{
+    width:25%
+}
+.col-4,.col-md-4,.col-lg-4{
+    width:33.33%
+}
+.col-5,.col-md-5,.col-lg-5{
+    width:41.66%
+}
+.col-6,.col-md-6,.col-lg-6{
+    width:50%
+}
+.col-7,.col-md-7,.col-lg-7{
+    width:58.33%
+}
+.col-8,.col-md-8,.col-lg-8{
+    width:66.66%
+}
+.col-9,.col-md-9,.col-lg-9{
+    width:75%
+}
+.col-10,.col-md-10,.col-lg-10{
+    width:83.33%
+}
+.col-11,.col-md-11,.col-lg-11{
+    width:91.66%
+}
+.col-12,.col-md-12,.col-lg-12{
+    width:100%
+}
+.list{
+    list-style-type: none;
+}
+.list a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-weight: 500;
+    font-size: 17px;
+}
+.list a::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: .5s;
+}  
+.list:hover a::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.icon p,div{
+    font-size: 17px;
+    font-weight: 500;
+}
+.border{
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px gray;
+    overflow: hidden;
+}
+.border img{
+    display: block;
+    transition: .5s;
+}
+.border:hover img{
+    transform: scale(1.1);
+}
+
+@media (max-width:586px){
+    .res{
+        display: none !important;
+    }   
+    .res-change-width-1{
+        width: 50% !important;
+    }
+    .res-change-width-2{
+        width: 50% !important;
+    }
+}
+@media (min-width:586px){
+    .res{
+        display: none !important;
+    }   
+    .res-change-width-1{
+        width: 50% !important;
+    }
+    .res-change-width-2{
+        width: 50% !important;
+    }
+}
+@media (min-width:786px) {
+    .res{
+        display: none !important;
+    }   
+    .res-change-width-1{
+        width: 50% !important;
+    }
+    .res-change-width-2{
+        width: 50% !important;
+    }
+}
+@media (min-width:992px) {
+    .res{
+        display: flex !important;
+    }  
+    .res-change-width-1{
+        width: 8.33% !important;
+    }
+    .res-change-width-2{
+        width: 16.66% !important;
+    }
+}
